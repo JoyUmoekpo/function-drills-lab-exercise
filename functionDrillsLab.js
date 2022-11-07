@@ -79,21 +79,18 @@ greeting('Joy');
 
 //CODE HERE
 
-const compareNums = (num1, num2) => {
-  if (num1 > num2) {
-    console.log(num1)
-  } else if (num1 < num2) {
-    console.log(num2)
-  }
-}
+// const compareNums = (num1, num2) => {
+//   if (num1 > num2) {
+//     console.log(num1)
+//   } else if (num1 < num2) {
+//     console.log(num2)
+//   }
+// }
 
-compareNums(57, 8);
+// compareNums(57, 16);
 
-// const compareNums = (num1, num2) =>
-//   num1 > num2 ? num1 :
-//   num2 > num1 ? num2;
-
-// compareNums(7, 6);
+const compareNums = (num1, num2) => num1 > num2 ? console.log(num1) : console.log(num2);
+compareNums(57, 16);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -210,6 +207,19 @@ nameCheck('Joy')
 
 //CODE HERE
 
+const faveColorFinder = (color) => {
+  if (color === 'red') {
+    console.log('red is a great color');
+  } else if (color === 'green') {
+    console.log('green is a solid favorite color');
+  } else if (color === 'black') {
+    console.log('so trendy');
+  } else {
+    console.log('you need to evaluate your favorite color choice')
+  }
+}
+
+let colorRating = faveColorFinder('green');
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
