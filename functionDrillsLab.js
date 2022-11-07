@@ -89,10 +89,9 @@ const compareNums = (num1, num2) => {
 
 compareNums(57, 8);
 
-// const compareNums = (num1, num2) => {
-//     (num1 > num2) ? console.log(num1)
-//   : (num2 > num1) ? console.log(num2)
-// }
+// const compareNums = (num1, num2) =>
+//   num1 > num2 ? num1 :
+//   num2 > num1 ? num2;
 
 // compareNums(7, 6);
 
@@ -187,6 +186,17 @@ console.log('declaration')
 
 //CODE HERE
 
+const nameCheck = (NAMEPARAM) => {
+  if (NAMEPARAM === 'Steven') {
+    console.log('What is up Steven?');
+  } else if (NAMEPARAM === 'Bryan') {
+    console.log('Hey Bryan');
+  } else {
+    console.log('Cool name , ' + NAMEPARAM);
+  }
+}
+
+nameCheck('Joy')
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
