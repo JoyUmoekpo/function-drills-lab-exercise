@@ -130,7 +130,7 @@ console.log(sum);
 
     // console.log('arrow')
     // console.log('declaration')
-    // console.log('expression')
+    console.log('expression');
 
 
 
