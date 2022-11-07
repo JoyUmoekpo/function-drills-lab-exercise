@@ -19,6 +19,8 @@ const helloWorld = () => {
 
 helloWorld();
 
+console.log('----------------------------');
+
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -32,6 +34,8 @@ const jsNinja = () => {
 }
 
 jsNinja();
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -47,6 +51,8 @@ const printName = (name) => {
 }
 
 printName('Joy');
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -65,6 +71,8 @@ const greeting = (name) => {
 }
 
 greeting('Joy');
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -92,6 +100,8 @@ greeting('Joy');
 const compareNums = (num1, num2) => num1 > num2 ? console.log(num1) : console.log(num2);
 compareNums(57, 16);
 
+console.log('----------------------------');
+
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -113,6 +123,8 @@ let sum = add('7', '3');
 
 console.log(sum);
 
+console.log('----------------------------');
+
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -128,7 +140,7 @@ const exclaim = function (str) {
 // console.log('declaration')
 console.log('expression');
 
-
+console.log('----------------------------');
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -156,6 +168,8 @@ const exclaimThree = str => str.toUpperCase() + '!!!'
 
 console.log(exclaimThree('joy'));
 
+console.log('----------------------------');
+
 ////////////////// PROBLEM 9 ////////////////////
 
 /*
@@ -171,6 +185,7 @@ function exclaimFour(str) {
 console.log('declaration')
 // console.log('expression')
 
+console.log('----------------------------');
 
 ////////////////// PROBLEM 10 ////////////////////
 /*
@@ -194,6 +209,8 @@ const nameCheck = (NAMEPARAM) => {
 }
 
 nameCheck('Joy')
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -221,6 +238,8 @@ const faveColorFinder = (color) => {
 
 let colorRating = faveColorFinder('green');
 
+console.log('----------------------------');
+
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
@@ -239,6 +258,8 @@ const printAllNames = (namesArr) => {
 
 printAllNames(namesArr);
 
+console.log('----------------------------');
+
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
@@ -249,6 +270,11 @@ printAllNames(namesArr);
 
 //CODE HERE
 
+const thatsOdd = (number) => number % 2 === 0 ? console.log("That's not odd!") : console.log("That is odd indeed!");
+
+let oddChecker = thatsOdd(95);
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -262,6 +288,9 @@ printAllNames(namesArr);
 
 //CODE HERE
 
+
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107]
@@ -277,6 +306,9 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107]
 //CODE HERE
 
 
+
+console.log('----------------------------');
+
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
 let loser = 'Glimmer'
@@ -288,6 +320,9 @@ let loser = 'Glimmer'
 //CODE HERE
 
 
+
+console.log('----------------------------');
+
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
@@ -297,6 +332,9 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -309,6 +347,10 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+
+
+console.log('----------------------------');
+
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
@@ -318,6 +360,9 @@ let sampleString = "Hi, my name is Kylo."
 //CODE HERE
 
 
+
+console.log('----------------------------');
+
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
@@ -325,6 +370,9 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9]
@@ -334,6 +382,9 @@ let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9]
 
 //CODE HERE
 
+
+
+console.log('----------------------------');
 
 ////////////////// PROBLEM 22 ////////////////////
 
