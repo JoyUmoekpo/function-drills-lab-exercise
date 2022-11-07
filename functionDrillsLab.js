@@ -42,6 +42,11 @@ jsNinja();
 
 //CODE HERE
 
+const printName = (name) => {
+  console.log(name);
+} 
+
+printName('Joy Umoekpo');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
