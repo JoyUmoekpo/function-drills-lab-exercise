@@ -46,7 +46,7 @@ const printName = (name) => {
   console.log(name);
 } 
 
-printName('Joy Umoekpo');
+printName('Joy');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -60,6 +60,11 @@ printName('Joy Umoekpo');
 
 //CODE HERE
 
+const greeting = (name) => {
+  console.log('Hello, ' + name);
+}
+
+greeting('Joy');
 
 ////////////////// PROBLEM 5 ////////////////////
 
