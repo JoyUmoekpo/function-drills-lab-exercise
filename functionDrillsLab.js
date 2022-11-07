@@ -106,6 +106,17 @@ compareNums(57, 8);
 
 //CODE HERE
 
+const add = (param1, param2) => {
+  param1 = Number(param1);
+  param2 = Number(param2);
+
+  return param1 + param2;
+}
+
+let sum = add('7', '3');
+
+console.log(sum);
+
     ////////////////// PROBLEM 7 ////////////////////
 
     /*
