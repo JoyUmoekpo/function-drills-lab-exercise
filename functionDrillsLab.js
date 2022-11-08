@@ -306,7 +306,19 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107]
 
 //CODE HERE
 
+const bigOrSmall = (arr) => {
+  let answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big');
+    } else {
+      answers.push('small');
+    }
+  }
+  console.log(answers);
+}
 
+bigOrSmall(bigOrSmallArray);
 
 console.log('----------------------------');
 
