@@ -288,7 +288,8 @@ console.log('----------------------------');
 
 //CODE HERE
 
-
+const bestMovie = MOVEIEPARAM => console.log(MOVEIEPARAM, ' is the best movie ever!');
+bestMovie('Real Steel');
 
 console.log('----------------------------');
 
