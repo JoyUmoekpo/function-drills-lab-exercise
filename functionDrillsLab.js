@@ -365,7 +365,9 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+const stringTaker = str => console.log(str.toUpperCase());
 
+stringTaker(sampleString);
 
 console.log('----------------------------');
 
