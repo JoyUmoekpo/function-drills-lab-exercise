@@ -323,7 +323,7 @@ bigOrSmall(bigOrSmallArray);
 console.log('----------------------------');
 
 ////////////////// PROBLEM 16 ////////////////////
-let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
+let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
 let loser = 'Glimmer'
 /*
   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
@@ -332,7 +332,27 @@ let loser = 'Glimmer'
 
 //CODE HERE
 
+// const theEliminator = (arr, loser) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === loser) {
+//       arr.splice(i, 1);
+//       i--;
+//     }
+//   }
+//   return console.log(arr);
+// }
 
+const theEliminator = (arr, loser) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].includes(loser)) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+  return console.log(arr);
+}
+
+theEliminator(contestants, loser);
 
 console.log('----------------------------');
 
