@@ -382,7 +382,21 @@ console.log('----------------------------');
   return 'must provide a valid email address'
 */
 
+let sampleEmail = '         email@example.com     ';
 
+console.log(sampleEmail.length);
+
+const emailCheck = (email) => {
+  let newEmail = email.trim();
+
+  if (newEmail.includes('@')) {
+    return 'Email verified / ' + 'Length of Email: ' + newEmail.length;
+  } else {
+    return 'Must provide a valid email address';
+  }
+}
+
+console.log(emailCheck(sampleEmail));
 
 console.log('----------------------------');
 
