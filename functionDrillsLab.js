@@ -408,7 +408,19 @@ console.log('----------------------------');
 
 //CODE HERE
 
+const chocolateFrogs = (gold) => {
+  let frogs = gold / 3;
 
+  if (gold === 3) {
+    return `You have purchased ${frogs} chocolate frog.`;
+  } else if (gold > 3) {
+    return `You have purchased ${frogs} chocolate frogs.`;
+  }
+};
+
+let totalFrogs = chocolateFrogs(9);
+
+console.log(totalFrogs);
 
 console.log('----------------------------');
 
