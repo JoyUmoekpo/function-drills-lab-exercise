@@ -69,6 +69,7 @@ console.log('----------------------------');
 const greeting = (name) => {
   name = String(name) //correction
   console.log('Hello, ' + name); //My answer
+  console.log(`Hello, ${name}`) //Their answer
 }
 
 greeting('Joy');
@@ -99,6 +100,9 @@ console.log('----------------------------');
 // compareNums(57, 16);
 
 const compareNums = (num1, num2) => num1 > num2 ? console.log(num1) : console.log(num2);
+
+// const compareNums = (num1, num2) => num1 > num2 ? num1 : num2   another way to write
+
 compareNums(57, 16);
 
 console.log('----------------------------');
@@ -123,6 +127,15 @@ const add = (param1, param2) => {
 let sum = add('7', '3');
 
 console.log(sum);
+
+// Another way
+// function add(num, num2) {
+//   num = +num
+//   num2 = +num2
+//   return num + num2
+// }
+
+// let sum = add(12, 24)
 
 console.log('----------------------------');
 
@@ -165,7 +178,9 @@ console.log('arrow')
   Brownie points if you use a template string
 */
 
-const exclaimThree = str => str.toUpperCase() + '!!!'
+// const exclaimThree = str => str.toUpperCase() + '!!!'
+
+const exclaimThree = str => `${str.toUpperCase()}!!!`  //Template string way
 
 console.log(exclaimThree('joy'));
 
@@ -201,15 +216,17 @@ console.log('----------------------------');
 
 const nameCheck = (NAMEPARAM) => {
   if (NAMEPARAM === 'Steven') {
-    console.log('What is up Steven?');
+    return 'What is up Steven?'
   } else if (NAMEPARAM === 'Bryan') {
-    console.log('Hey Bryan');
+    return 'Hey Bryan'
   } else {
-    console.log('Cool name , ' + NAMEPARAM);
+    return 'Cool name, ' + NAMEPARAM
   }
 }
 
-nameCheck('Joy')
+let nameGreeting = nameCheck('Joy')
+
+console.log(nameGreeting);
 
 console.log('----------------------------');
 
@@ -227,17 +244,19 @@ console.log('----------------------------');
 
 const faveColorFinder = (color) => {
   if (color === 'red') {
-    console.log('red is a great color');
+    return 'red is a great color'
   } else if (color === 'green') {
-    console.log('green is a solid favorite color');
+    return 'green is a solid favorite color'
   } else if (color === 'black') {
-    console.log('so trendy');
+    return 'so trendy'
   } else {
-    console.log('you need to evaluate your favorite color choice')
+    return 'you need to evaluate your favorite color choice'
   }
 }
 
 let colorRating = faveColorFinder('green');
+
+console.log(colorRating);
 
 console.log('----------------------------');
 
@@ -271,9 +290,11 @@ console.log('----------------------------');
 
 //CODE HERE
 
-const thatsOdd = (number) => number % 2 === 0 ? console.log("That's not odd!") : console.log("That is odd indeed!");
+const thatsOdd = (number) => number % 2 === 0 ? "That's not odd!" : "That is odd indeed!"
 
 let oddChecker = thatsOdd(95);
+
+console.log(oddChecker);
 
 console.log('----------------------------');
 
@@ -289,8 +310,12 @@ console.log('----------------------------');
 
 //CODE HERE
 
-const bestMovie = MOVEIEPARAM => console.log(MOVEIEPARAM, ' is the best movie ever!');
-bestMovie('Real Steel');
+const bestMovie = MOVEIEPARAM => MOVEIEPARAM + ' is the best movie ever!'
+
+// const bestMovie = title => `${title} is the best movie ever!`   // template string example
+
+
+console.log(bestMovie('Real Steel'))
 
 console.log('----------------------------');
 
@@ -316,10 +341,12 @@ const bigOrSmall = (arr) => {
       answers.push('small');
     }
   }
-  console.log(answers);
+  return answers;
 }
 
-bigOrSmall(bigOrSmallArray);
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
+
+console.log(arrayEvaluator);
 
 console.log('----------------------------');
 
@@ -343,17 +370,19 @@ let loser = 'Glimmer'
 //   return console.log(arr);
 // }
 
-const theEliminator = (arr, loser) => {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].includes(loser)) {
-      arr.splice(i, 1);
+const theEliminator = (contestants, loser) => {
+  for (let i = 0; i < contestants.length; i++) {
+    if (contestants[i].includes(loser)) {
+      contestants.splice(i, 1);
       i--;
     }
   }
-  return console.log(arr);
+  return contestants;
 }
 
-theEliminator(contestants, loser);
+let updatedContestants = theEliminator(contestants, loser);
+
+console.log(updatedContestants);
 
 console.log('----------------------------');
 
@@ -385,15 +414,13 @@ console.log('----------------------------');
 
 let sampleEmail = '         email@example.com     ';
 
-console.log(sampleEmail.length);
-
 const emailCheck = (email) => {
-  let newEmail = email.trim();
+  email = String(email).trim();
 
-  if (newEmail.includes('@')) {
-    return 'Email verified / ' + 'Length of Email: ' + newEmail.length;
+  if (email.includes('@')) {
+    return 'email verified'
   } else {
-    return 'Must provide a valid email address';
+    return 'must provide a valid email address';
   }
 }
 
@@ -410,16 +437,10 @@ console.log('----------------------------');
 //CODE HERE
 
 const chocolateFrogs = (gold) => {
-  let frogs = gold / 3;
-
-  if (gold === 3) {
-    return `You have purchased ${frogs} chocolate frog.`;
-  } else if (gold > 3) {
-    return `You have purchased ${frogs} chocolate frogs.`;
-  }
+  return gold / 3;
 };
 
-let totalFrogs = chocolateFrogs(9);
+let totalFrogs = chocolateFrogs(100);
 
 console.log(totalFrogs);
 
@@ -433,20 +454,16 @@ console.log('----------------------------');
 //CODE HERE
 
 const chocolateFrogs2 = (gold) => {
-  let frogs = gold / 3;
-
-  if (gold % 3 !== 0) {
-    return `Please enter a number divisible by 3`
-  } else if (gold === 0) {
-    return `Get out of here and only come back when you have money!`;
-  } else if (gold === 3) {
-    return `You have purchased ${frogs} chocolate frog.`;
-  } else if (gold > 3 && gold % 3 === 0) {
-    return `You have purchased ${frogs} chocolate frogs.`;
+  if (gold % 3 === 0) {
+    return gold / 3
+  } else if ((gold - 1) % 3 === 0) {
+    return (gold - 1) / 3
+  } else {
+    return (gold - 2) / 3
   }
-};
+}
 
-let totalFrogs2 = chocolateFrogs2(0);
+let totalFrogs2 = chocolateFrogs2(100);
 
 console.log(totalFrogs2);
 
