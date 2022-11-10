@@ -431,7 +431,23 @@ console.log('----------------------------');
 
 //CODE HERE
 
+const chocolateFrogs2 = (gold) => {
+  let frogs = gold / 3;
 
+  if (gold % 3 !== 0) {
+    return `Please enter a number divisible by 3`
+  } else if (gold === 0) {
+    return `Get out of here and only come back when you have money!`;
+  } else if(gold === 3) {
+    return `You have purchased ${frogs} chocolate frog.`;
+  } else if (gold > 3 && gold % 3 === 0) {
+    return `You have purchased ${frogs} chocolate frogs.`;
+  } 
+};
+
+let totalFrogs2 = chocolateFrogs2(0);
+
+console.log(totalFrogs2);
 
 console.log('----------------------------');
 
