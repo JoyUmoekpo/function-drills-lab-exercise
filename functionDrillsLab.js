@@ -438,11 +438,11 @@ const chocolateFrogs2 = (gold) => {
     return `Please enter a number divisible by 3`
   } else if (gold === 0) {
     return `Get out of here and only come back when you have money!`;
-  } else if(gold === 3) {
+  } else if (gold === 3) {
     return `You have purchased ${frogs} chocolate frog.`;
   } else if (gold > 3 && gold % 3 === 0) {
     return `You have purchased ${frogs} chocolate frogs.`;
-  } 
+  }
 };
 
 let totalFrogs2 = chocolateFrogs2(0);
@@ -459,7 +459,21 @@ let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9]
 
 //CODE HERE
 
+const ascendingArrayChecker = arr => {
+  let comparisonValue = arr[0];
+  for (let i = 1; i < arr.length - 1; i++) {
+    if (arr[i] <= comparisonValue) {
+      return false;
+    } else {
+      comparisonValue = arr[i];
+    }
+  }
+  return true;
+}
 
+const arrayIsAscending = ascendingArrayChecker(sampleArray);
+
+console.log(arrayIsAscending);
 
 console.log('----------------------------');
 
