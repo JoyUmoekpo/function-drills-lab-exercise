@@ -67,7 +67,8 @@ console.log('----------------------------');
 //CODE HERE
 
 const greeting = (name) => {
-  console.log('Hello, ' + name);
+  name = String(name) //correction
+  console.log('Hello, ' + name); //My answer
 }
 
 greeting('Joy');
